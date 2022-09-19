@@ -1,8 +1,8 @@
 clear;
 clc
 % read calcium data and event time
-g6f = xlsread('male_MMP8_FP_pre4_female_dff.xlsx'); % PASTE name of the file here
-events = xlsread('male_MMP8_FP_pre4_female_event.xlsx'); % PASTE name of the file here
+g6f = xlsread('female_dff.xlsx'); % PASTE name of the file here
+events = xlsread('female_event.xlsx'); % PASTE name of the file here
 % round the event time
 event = round(events);
 % define different event time
@@ -34,4 +34,4 @@ plot(ev_cal);
 saveas(gcf,'image22.jpg');
 
 % write into excel
-xlswrite('male_MMP8_FP_pre4_female_singleevent.xlsx',ev_cal);
+xlswrite('female_singleevent.xlsx',ev_cal);
