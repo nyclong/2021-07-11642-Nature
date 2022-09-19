@@ -8,8 +8,8 @@
 
 
 % read the event duration and calcium data
-g = xlsread('male_MMP8_FP_pre4_female_dff.xlsx');
-dur = xlsread('male_MMP8_FP_pre4_female_event.xlsx');
+g = xlsread('maledff.xlsx');
+dur = xlsread('maleevent.xlsx');
 
 figure;
 plot(g);
@@ -26,7 +26,7 @@ for i = 1:length(dur_s)
 end
 axis([0 length(g) -0.2 0.3]); % axis limit
 alpha(0.3);
-saveas(gcf,'male_MMP8_FP_pre4_female','jpg');
+saveas(gcf,'male','jpg');
 
 
 
