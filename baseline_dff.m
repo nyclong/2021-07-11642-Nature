@@ -4,7 +4,7 @@
 clc;
 clear;
 
-data = xlsread('male_MMP8_FP_pre4_female.csv');
+data = xlsread('female.csv');
 raw = data(:,3);
 plot(raw);
 %%
@@ -27,7 +27,7 @@ b = (1/windowSize)*ones(1,windowSize);
 a = 1;
 gfdff = filter(b,a,gdff);
 plot(gfdff);
-xlswrite('male_MMP8_FP_pre4_female_dff.xlsx',gfdff);
+xlswrite('female_dff.xlsx',gfdff);
 % %%
 % windowSize = 15; 
 % b = (1/windowSize)*ones(1,windowSize);
